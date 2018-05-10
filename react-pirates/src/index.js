@@ -6,7 +6,6 @@ import {
 } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import Header from './components/Header';
 import PirateDetail from './components/PirateDetail';
 import registerServiceWorker from './registerServiceWorker';
 
@@ -15,7 +14,6 @@ class Main extends React.Component {
     return (
       <Router>
       <div>
-          <Header headerTitle="Pirate List" />
           <Route exact path="/" component={App} />
           <Route path="/pirate/:pid" component={PirateDetail} />
       </div>
