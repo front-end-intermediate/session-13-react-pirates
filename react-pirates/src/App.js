@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Pirate from './components/Pirate';
 import Header from './components/Header';
 import PirateForm from './components/PirateForm';
+import PirateDetail from './components/PirateDetail';
 import './assets/css/app.css';
 import piratesFile from './data/sample-pirates-object';
 import base from './base';
@@ -39,6 +40,8 @@ class App extends Component {
           loadSamples={this.loadSamples}
           pirates={this.state.pirates}
           updatePirate={this.updatePirate} />
+        
+        {/* <PirateDetail /> */}
       </div>
     );
   }
